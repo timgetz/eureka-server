@@ -1,0 +1,10 @@
+server:
+  port: 8010
+eureka:
+  instance:
+    hostname: localhost
+    health-check-url-path: ${management.contextPath}/health
+    status-page-url-path: ${management.contextPath}/info
+  client:
+    register-with-eureka: false
+    fetch-registry: false
